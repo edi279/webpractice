@@ -7,7 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<label for="visit_memo">Visitor's memo</label>
-	<input type="text" id="visit_meno" name="visit_memo"><br>
+	<form id="target" action="demo1.html">
+		<label for="visit_memo">Visitor's memo</label>
+		<input type="textarea" id="visit_memo" name="visit_memo"><br>
+		<input type="submit" id="start" value="Start">
+	</form>
+	<script>
+		var targ = document.getElementById('target');
+		targ.addEventListener('submit', function(event){
+			if(document.getElementById('visit_memo').value.length === 0){
+				alert('Please write anything you wanna say.');
+				event.preventDefault();
+			}		
+		});
 </body>
 </html>
