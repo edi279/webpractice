@@ -29,5 +29,15 @@
 			}
 		});
 	</script>
+	<br>
+	<h3>Your name</h3>
+	<input id='name' onkeyup='printName()'/>
+	<div id='result'></div>
+	<script>
+		function printName(){
+			const name = document.getElementById('name').value;
+			document.getElementById("result").innerText = name;
+		}
+	</script>
 </body>
 </html>
