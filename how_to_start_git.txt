@@ -1,0 +1,9 @@
+git init
+git pull
+git fetch
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/edi279/webpractice.git
+git push -u origin master
+
