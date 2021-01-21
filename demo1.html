@@ -8,17 +8,18 @@
 </head>
 <body>
 	<form id="target" action="demo1.html">
-		<label for="visit_memo">Visitor's memo</label>
-		<input type="text" id="visit_memo" name="visit_memo"><br>
-		<input type="submit" />
+		<label for="q1">38*27?</label>
+		<input type="text" id="q1" name="q1"><br>
+		<input type="submit" id="answer" value="Answer">
 	</form>
 	<script>
 		var targ = document.getElementById('target');
 		targ.addEventListener('submit', function(event){
-			if(document.getElementById('visit_memo').value.length === 0){
-				alert('Please write anything you wanna say.');
+			if(document.getElementById('q1').value.length === 0){
+				alert('Please write answer.');
 				event.preventDefault();
 			}		
 		});
+	</script>
 </body>
 </html>
