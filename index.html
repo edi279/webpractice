@@ -24,9 +24,20 @@
 			<option value="nate.com">nate.com</option>
 		</select>
 		<br>
-	<input type="submit" value="Sign Up" style="float: center;" onclick="return check()">
-	<input type="reset" value="Cancel" style="float: center;margin-right:50px">
-	<input type="button" value="Hello world" onclick="alert('Hello world')">
-		
+	<input type="submit" id="signup" value="Sign Up" style="float: center;">
+	<script type="text/javascript">
+		var signup = document.getElementById('signup');
+		signup.addEventListener('click', function(){
+			alart('Welcome!');
+			return check();
+		})
+	</script>
+	<input type="reset" id="cancel" value="Cancel" style="float: center;margin-right:50px">
+	<script type="text/javascript">
+		var cancel=document.getElementById('cancel');
+		cancel.addEventListener('click', function(){
+			alart('D;');
+		})
+	</script>
 </body>
 </html>
