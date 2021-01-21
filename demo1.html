@@ -8,8 +8,8 @@
 </head>
 <body>
 	<form id="target" action="demo1.html">
-		<label for="q1">38*27?</label>
-		<input type="text" id="q1" name="q1"><br>
+		<label for="q1">38 x 27 = </label>
+		<input type="text" id="q1" name="q1">
 		<input type="submit" id="answer" value="Answer">
 	</form>
 	<script>
@@ -18,7 +18,14 @@
 			if(document.getElementById('q1').value.length === 0){
 				alert('Please write answer.');
 				event.preventDefault();
-			}		
+			}
+			else if(document.getElementById('q1').value.length === 1026){
+				alert('Correct! d^_____^b');
+			}
+			else{
+				alert('Wrong answer. Try again....');
+				event.preventDefault();
+			}
 		});
 	</script>
 </body>
